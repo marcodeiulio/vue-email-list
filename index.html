@@ -13,7 +13,11 @@
 
 <body>
 	<div id="root">
-		{{message}}
+		<section>
+			<ol>
+				<li v-for="email in emails">{{email}}</li>
+			</ol>
+		</section>
 	</div>
 	<script src="./js/script.js"></script>
 </body>
