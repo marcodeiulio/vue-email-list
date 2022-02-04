@@ -10,7 +10,7 @@ const root = new Vue({
 			for (let i = 0; i < num; i++) {
 				axios.get('https://flynn.boolean.careers/exercises/api/random/mail').then(res => {
 					this.emails.push(res.data.response);
-					console.log(this.emails);
+					if (i === num - 1) console.log(this.emails);
 				});
 			}
 		}
